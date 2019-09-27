@@ -1,0 +1,33 @@
+<!--pages/add_task/index.wxml-->
+
+<view class="container">
+<text>请设置任务：</text>
+<view class="timeblock"><input class = "input" type="text" placeholder="任务名" placeholder-class="ph" bindinput="settask"/></view>
+
+<!-- <text>请选择一个任务：</text>
+<view class="tagrow">
+<button class="tag">吃饭</button>
+<button class="tag">锻炼</button>
+</view>
+
+<view class="tagrow">
+<button class = "tag">刷leetcode</button>
+<button class = "tag">做作业</button>
+</view>
+
+<view class="tagrow">
+<button class = "tag">起床</button>
+<button class = "tag">睡觉</button>
+</view> -->
+
+<view>请设定时间：</view>
+<view class="timeblock">
+<input class = "input" type="text" placeholder="开始时间" placeholder-class="ph" bindinput="setstarttime"/>
+<input class = "input" type="text" placeholder="结束时间" placeholder-class="ph" bindinput="setendtime"/>
+</view>
+<view class="summit">
+<button bindtap="cancel">取消</button>
+<button bindtap="update">确定</button>
+</view>
+<picker class='time-picker' mode="multiSelector" bindchange="bindStartMultiPickerChange" bindtap='pickerTap' bindcolumnchange="bindMultiPickerColumnChange" value="{{multiIndex}}" range="{{multiArray}}">{{startDate}}</picker>
+</view>

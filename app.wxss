@@ -1,0 +1,27 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  width: 100%;
+  display: inline-block; 
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box; 
+  padding: 30rpx 10rpx 0 10rpx;
+} 
+
+.top {
+  flex-direction: row;
+  display: inline;
+  float: right;
+}
+
+
+.time{
+  padding: 30rpx;
+  color:  darkgray;
+  font-size: 30rpx;
+  line-height: 10rpx;  
+  /* background-color: red;  */
+}
+

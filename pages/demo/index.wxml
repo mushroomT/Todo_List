@@ -1,0 +1,33 @@
+<!--pages/demo/index.wxml-->
+<view class="top"><view class="top">
+<button class="addbutton" bindtap="bindViewTap">+</button>
+</view></view>
+<view class="container">
+<view class="time">{{date}}
+<text>今日任务</text>
+</view>
+
+<view class="table">
+
+  <!-- <view class="tr bg-w">
+    <view class="th">head1</view>
+    <view class="th">head2</view>
+  </view> -->
+  
+  <block wx:for="{{listData}}" wx:key="{{task}}">
+    <view class="tr bg-g" wx:if="{{index % 2 == 0}}">
+      <view class="tdl">{{item.starttime}}</view>
+      <view class="tdl">{{item.endtime}}</view>
+      <view class="tdr">{{item.task}}</view>
+    </view>
+    <view class="tr" wx:else>
+      <view class="tdl">{{item.starttime}}</view>
+      <view class="tdl">{{item.endtime}}</view>
+      <view class="tdr">{{item.task}}</view>
+    </view>
+  </block>
+
+</view>
+<view class="container"><button class="remove" bindtap="bindremove">清空列表</button></view>
+
+</view>

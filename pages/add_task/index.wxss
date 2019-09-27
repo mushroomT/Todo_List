@@ -1,0 +1,35 @@
+/* pages/add_task/index.wxss */
+.tagrow{
+  display: flex; 
+  flex-direction: row;
+  margin-top: 10rpx;
+  margin-bottom: 10rpx;
+}
+.tag{
+  width: 80%;
+  font-size: 12pt;
+  background-color: #E6F3F9;
+  margin: 0 30rpx 0 30rpx;
+}
+
+.input{
+  background-color: #E6F3F9;
+  margin: 2rpx 15rpx 2rpx 15rpx;
+  padding: 10rpx 10rpx 10rpx 10rpx;
+  border-radius: 10rpx;
+  width: 60%;
+}
+
+.timeblock{
+  display: flex; 
+  flex-direction: row;
+  margin: auto 30rpx 0 30rpx;
+  padding: 10rpx 10rpx 10rpx 10rpx;
+  border-radius: 10rpx;
+}
+
+.summit{
+  display: flex; 
+  flex-direction: row;
+  margin-top: 100rpx;
+}

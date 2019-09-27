@@ -1,0 +1,15 @@
+{
+  "pages": [
+    "pages/demo/index",
+    "pages/add_task/index",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#4DD0E1",
+    "navigationBarTitleText": "蜻蜓日程",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json"
+}
